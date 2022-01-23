@@ -18,7 +18,10 @@ class MovieManagerTest {
     FaceOfMovie tenth = new FaceOfMovie(10, 10, "Little Shop of Horrors", "Horror");
     FaceOfMovie eleventh = new FaceOfMovie(11, 11, "South Park", "Cartoon");
     FaceOfMovie twelveth = new FaceOfMovie(12, 12, "Fight Club", "Thriller");
+
     private MovieManager manager = new MovieManager();
+
+
 
     public void setUp() {
         manager.add(first);

@@ -6,6 +6,17 @@ public class MovieManager {
     public FaceOfMovie[] movies = new FaceOfMovie[0];
     private int feedCount = 10;
 
+    public MovieManager() {
+    } // конструктор без параметров/аргументов
+
+    public MovieManager(int feedCount) {
+        this.feedCount = feedCount;
+    } // конструктор с параметром, значением которого выставляется лимит
+
+    public MovieManager(FaceOfMovie[] movies, int feedCount) {
+        this.movies = movies;
+        this.feedCount = feedCount;
+    }
 
     // add new movie
     public void add(FaceOfMovie movie) {
